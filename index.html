@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CubeSat Checklist & IP Info</title>
+    <style>
+        :root {
+            --primary: #003366;
+            --accent: #0099cc;
+            --bg: #f5f5f5;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: var(--accent);
+        }
+
+        .ip-info {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .ip-info p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .checklist-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .ip-info p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Company Logo" class="logo" />
+        <h1>🛰️ CubeSat Checklist & IP Info</h1>
+    </header>
+
+    <section class="ip-info">
+        <p><strong>ESP32 IP:</strong> 192.168.1.50</p>
+        <p><strong>ESP32-CAM IP:</strong> 192.168.1.51</p>
+    </section>
+
+    <img src="checklist.png" alt="CubeSat Component Checklist" class="checklist-img" />
+</body>
+
+</html>
