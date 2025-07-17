@@ -96,63 +96,33 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CubeSat Checklist Portal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            text-align: center;
-            background: #f4f4f4;
-        }
-
-        img.logo {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 15px 0;
-        }
-
-        a {
-            text-decoration: none;
-            background: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: background 0.3s;
-        }
-
-        a:hover {
-            background: #0056b3;
-        }
-    </style>
+    <title>CubeSat Checklist Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <img src="logo.png" alt="Company Logo" class="logo" />
-    <h1>CubeSat Checklist Portal</h1>
-    <p>Select a CubeSat to view its info and checklist:</p>
+<body class="bg-gray-100 text-gray-900 font-sans">
 
-    <ul>
-        <li><a href="cube1.html">CubeSat 1</a></li>
-        <li><a href="cube2.html">CubeSat 2</a></li>
-        <li><a href="cube3.html">CubeSat 3</a></li>
-        <li><a href="cube4.html">CubeSat 4</a></li>
-        <li><a href="cube5.html">CubeSat 5</a></li>
-        <li><a href="cube6.html">CubeSat 6</a></li>
-        <li><a href="cube7.html">CubeSat 7</a></li>
-    </ul>
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="text-center">
+            <img src="logo.png" alt="Company Logo" class="w-32 mx-auto mb-4" />
+            <h1 class="text-4xl font-bold mb-2">CubeSat Checklist</h1>
+            <p class="text-gray-600 mb-6">Scan a CubeSat QR code or choose a CubeSat below to view details.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <!-- Repeat for each CubeSat -->
+            <a href="cube1.html" class="bg-white shadow rounded-lg p-4 hover:bg-blue-50 transition">
+                <h2 class="text-xl font-semibold">CubeSat 1</h2>
+                <p class="text-sm text-gray-500">View checklist and device IPs</p>
+            </a>
+            <a href="cube2.html" class="bg-white shadow rounded-lg p-4 hover:bg-blue-50 transition">
+                <h2 class="text-xl font-semibold">CubeSat 2</h2>
+                <p class="text-sm text-gray-500">View checklist and device IPs</p>
+            </a>
+            <!-- Add up to CubeSat 7 -->
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -5,70 +5,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CubeSat 1</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            text-align: center;
-            background: #ffffff;
-        }
-
-        img.logo {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 26px;
-            color: #333;
-        }
-
-        .info {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #444;
-        }
-
-        .info span {
-            font-weight: bold;
-        }
-
-        img.checklist {
-            max-width: 95%;
-            margin-top: 30px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
-
-        a.back {
-            display: inline-block;
-            margin-top: 30px;
-            text-decoration: none;
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border-radius: 8px;
-        }
-
-        a.back:hover {
-            background: #0056b3;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <img src="logo.png" alt="Company Logo" class="logo" />
-    <h1>CubeSat 1</h1>
+<body class="bg-white text-gray-800 font-sans">
 
-    <div class="info">
-        <p><span>ESP32 IP:</span> 192.168.1.10</p>
-        <p><span>ESP32-CAM IP:</span> 192.168.1.11</p>
+    <div class="max-w-3xl mx-auto p-6">
+        <div class="text-center mb-6">
+            <img src="logo.png" alt="Company Logo" class="w-24 mx-auto mb-4" />
+            <h1 class="text-3xl font-bold">CubeSat 1</h1>
+            <p class="text-gray-600">Checklist and Network Details</p>
+        </div>
+
+        <div class="mb-6">
+            <img src="checklist.jpg" alt="CubeSat Checklist" class="rounded shadow mx-auto w-full max-w-md" />
+        </div>
+
+        <div class="bg-gray-100 p-4 rounded shadow text-center">
+            <h2 class="text-xl font-semibold mb-2">ESP32 Information</h2>
+            <p><strong>ESP32 IP:</strong> <span class="text-blue-600">192.168.1.101</span></p>
+            <p><strong>ESP32-CAM IP:</strong> <span class="text-blue-600">192.168.1.111</span></p>
+        </div>
+
+        <div class="mt-6 text-center">
+            <a href="index.html" class="text-blue-500 hover:underline">← Back to Homepage</a>
+        </div>
     </div>
 
-    <img src="checklist.png" alt="Checklist Image" class="checklist" />
-
-    <br />
-    <a href="index.html" class="back">← Back to Index</a>
 </body>
 
 </html>
